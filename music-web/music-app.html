@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Catty Music</title>
+  </head>
+  <link rel="stylesheet" href="music-app.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!--overall body is a container with two parts. item1 (main) and item2 (footer)-->
+  <body>
+    <main>
+      <!--contain the main section of the app-->
+      <!--it is also a container with 2 parts: sidebar(item 1b) and content(item 1a) would then be flex-items-->
+      <!--(item 1a)content is also a container with 2 parts: music-head (item 1a-A) and music list(item 1a-B)-->
+      <!--music-head is also a flex container with 2 parts: image and catty-music-->
+      <aside>
+        <!--This represents the sidebar and contained in it are icon sets from font-awesome-->
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-home"></i>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-volume-up"></i>
+        <i class="fa fa-user"></i>
+        <i class="fa fa-spotify"></i>
+        <i class="fa fa-cog"></i>
+        <i class="fa fa-soundcloud"></i>
+      </aside>
+      <section class="content">
+        <!--This section will house everything other than the sidebar-->
+        <div class="music-head">
+          <!--First list item: contains music details-->
+          <img src="catty.png" />
+          <!--Album art-->
+          <section class="catty-music">
+            <!--other details of the album-->
+            <div>
+              <p>CattyBoard Top 100 Single Charts (11.06.36)</p>
+              <p>Unknown Artist</p>
+              <p>2016 . Charts . 100 songs</p>
+            </div>
+            <div>
+              <!--Music controls-->
+              <i class="fa fa-play"> &nbsp;Play all</i>
+              <i class="fa fa-plus"> &nbsp;Add to</i>
+              <i class="fa fa-ellipsis-h">&nbsp;&nbsp;More</i>
+            </div>
+          </section>
+        </div>
+        <!--end .music-head-->
+
+        <ul class="music-list">
+          <!--Second list item: Contains a list of all songs displayed-->
+          <li>
+            <p>1. oNE dANCE</p>
+            <p>crake feat catkid</p>
+            <p>2:54</p>
+            <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+          </li>
+          <li>
+            <p>2. Panda</p>
+            <p>Cattee</p>
+            <p>4:06</p>
+            <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+          </li>
+
+          <li>
+            <p>3. Can't Stop the Feeling!</p>
+            <p>Catin Cimberlake</p>
+            <p>3:56</p>
+            <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+          </li>
+
+          <li>
+            <p>4. Work From Home</p>
+            <p>Cat Harmony feat Colla</p>
+            <p>3:34</p>
+            <p><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <!--to contain the music control buttons and song details-->
+      <img src="catty.png" />
+      <ul class="a-song">
+        <li>
+          <p>If I ain't Love</p>
+          <p>capstrone</p>
+        </li>
+      </ul>
+      <aside>
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-home"></i>
+        <i class="fa fa-search"></i>
+        <i class="fa fa-volume-up"></i>
+        <i class="fa fa-user"></i>
+      </aside>
+    </footer>
+  </body>
+</html>

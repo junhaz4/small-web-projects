@@ -1,0 +1,140 @@
+html,
+body {
+  height: 100%; /*setting this explicitly is important*/
+}
+
+body {
+  display: flex; /*flex superpowers activated! */
+  flex-direction: column; /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/
+  background-color: #fff;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: #222;
+  font-size: 0.9em;
+}
+
+main {
+  flex: 1 0 auto; /*fill the available space*/
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex: 0 0 90px; /*don't grow or shrink - just stay at a height of 90px.*/
+  flex-direction: row;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(61, 100, 158, 0.9);
+}
+
+aside {
+  flex: 0 0 40px; /*as a flex item: do not grow or shrink. Just stay fixed at 40px*/
+  display: flex; /*Now you're a flex-container, you can decide how your flex-items are laid*/
+  flex-direction: column; /*Stack my flex-item's vertically...change the default direction*/
+  justify-content: space-around; /*Interesting...since direction is changed, this works on the vertical direction*/
+  align-items: center; /*direction is changed! This affects the horizontal direction*/
+  background-color: #f2f2f2; /*make me pretty*/
+}
+
+aside i.fa {
+  font-size: 2em; /*font size for the icons*/
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /*this makes sure the section grows o fill the entire available space*/
+}
+
+.music-head {
+  flex: 0 0 280px; /*Same memo, don't grow or shrink - stay at 280px*/
+  display: flex;
+  padding: 40px;
+  background-color: #4e4e4e;
+}
+
+.music-list {
+  flex: 1 0 auto;
+  list-style-type: none;
+  padding: 5px 10px 0px;
+}
+
+/* Dealing with the list of songs */
+li {
+  display: flex; /*Targets each list containing the paragraphs*/
+  padding: 0 20px;
+  min-height: 50px;
+}
+
+li p {
+  flex: 0 0 25%; /*Don’t grow or shrink but each paragraph should take up 25% of the available space*/
+  font-size: 2em;
+}
+
+li span.catty-cloud {
+  border: 1px solid black;
+  font-size: 0.6em;
+  padding: 3px;
+}
+
+li:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+/*Making the album details text look prettier.*/
+.catty-music {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 50px;
+  font-size: 2em;
+}
+
+.catty-music div:nth-child(1) {
+  margin-bottom: auto;
+}
+
+.catty-music div:nth-child(2) {
+  margin-top: auto;
+}
+
+.catty-music div:nth-child(2) i.fa {
+  font-size: 0.9em;
+  padding: 0 0.7em;
+  font-weight: 300;
+}
+
+.catty-music div:nth-child(1) p:first-child {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+
+.catty-music div:nth-child(1) p:not(:first-child) {
+  font-size: 0.9em;
+  margin: 2px 0;
+}
+
+footer aside {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(61, 100, 158, 0.9);
+  margin-left: auto;
+  justify-content: space-around;
+}
+
+.a-song li {
+  display: flex; /*Targets each list containing the paragraphs*/
+  flex-direction: column;
+  padding: 0 20px;
+  min-height: 50px;
+}
+
+.a-song li p {
+  flex: 0 0 25%; /*Don’t grow or shrink but each paragraph should take up 25% of the available space*/
+  font-size: 2em;
+}

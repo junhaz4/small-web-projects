@@ -1,0 +1,97 @@
+:root {
+  --error-red: #db4c3f;
+  --light-grey: #f1f1f1;
+  --border-grey: #b9b9b9;
+}
+
+body {
+  font-family: Arial;
+}
+
+.wrapper {
+  background: var(--light-grey);
+  padding: 1rem;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.signup__field {
+  border: none;
+}
+
+.signup__field__header {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.signup__field__inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.signup__field__inputs__input {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 2rem;
+  height: 1.2rem;
+  background: white;
+  border: 1px solid grey;
+  padding: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+.signup__field__inputs__input:hover {
+  border: 1px solid var(--border-grey);
+}
+
+.signup__field__inputs__input:focus {
+  box-shadow: 1px 1px 4px #d0d0d0 inset;
+  border: 1px solid var(--border-grey);
+  outline: none;
+}
+
+.signup__field__inputs__selection--month {
+  font-size: 12px;
+  width: 5rem;
+  color: grey;
+  line-height: 1.7;
+}
+
+.signup__field__inputs__selection--month:hover {
+  cursor: pointer;
+}
+
+.signup__field__inputs__input--error {
+  border: 1px solid var(--error-red);
+}
+
+.signup__field__error {
+  color: var(--error-red);
+  font-size: 13px;
+  margin-top: 0.5rem;
+}
+
+.signup__selector {
+  position: absolute;
+  width: 10rem;
+  font-size: 13px;
+  background: white;
+  color: #333;
+  border: 1px solid var(--border-grey);
+  box-shadow: 1px 1px 4px #d0d0d0;
+}
+
+.signup__selector__list {
+  padding: 0;
+  margin: 0;
+}
+
+.signup__selector__list__item {
+  list-style-type: none;
+  padding: 0.3rem;
+}
+
+.signup__selector__list__item:hover {
+  background: var(--light-grey);
+  cursor: pointer;
+}
